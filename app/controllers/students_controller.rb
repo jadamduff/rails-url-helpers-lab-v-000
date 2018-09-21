@@ -6,6 +6,8 @@ class StudentsController < ApplicationController
   end
 
   def show
+    set_student
+    @active = @student.active
   end
 
   private
